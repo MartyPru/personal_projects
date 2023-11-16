@@ -17,3 +17,50 @@
     # As a user
     # So that I can see roll outcomes clearly
     # I want a graphical representation of the outcomes of my rolls
+
+"""
+
+ ┌────────────────────────┐
+ │                        │
+ │  DiceBox():            │
+ │   -init                │ contains list of
+ │     -self.dice  ───────┼────────────────────┐
+ │   -add(num, sides)     │                    │
+ │   -roll_all            │                    │
+ │   -list_dice           │                    │
+ │   -empty_box           │        ┌───────────▼──────────┐
+ │                        │        │                      │
+ └────────────────────────┘        │ Die():               │
+                                   │  -init(self, sides)  │
+                                   │    self.sides        │
+                                   │  -roll               │
+                                   │                      │
+                                   │                      │
+                                   └──────────────────────┘
+
+"""
+
+
+class Die():
+    def __init__(self, sides):
+        pass
+    
+    def roll(self):
+        pass
+
+
+class DiceBox():
+    def __init__(self)
+        pass
+
+    def add(self, number_of_dice, sides):
+        pass
+
+    def roll_all():
+        pass
+
+    def list_dice():
+        pass
+
+    def empty_box():
+        pass
