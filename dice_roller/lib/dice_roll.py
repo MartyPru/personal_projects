@@ -39,28 +39,33 @@
                                    └──────────────────────┘
 
 """
-
+import random
 
 class Die():
     def __init__(self, sides):
-        pass
+        self.sides = sides
     
     def roll(self):
-        pass
+        return random.randint(1, self.sides)
 
 
 class DiceBox():
-    def __init__(self)
-        pass
+    def __init__(self):
+        self.dice = []
 
     def add(self, number_of_dice, sides):
-        pass
+        for i in range (number_of_dice):
+            new_die = Die(sides)
+            self.dice.append(new_die)
 
-    def roll_all():
-        pass
+    def roll_all(self):
+        results = []
+        for die in self.dice:
+            results.append(die.roll())
+        return f"Total: {sum(results)}, Rolls:{results}"
 
-    def list_dice():
-        pass
+    def list_dice(self):
+        return [f"d{die.sides}" for die in self.dice]
 
-    def empty_box():
-        pass
+    def empty_box(self):
+        self.dice = []
