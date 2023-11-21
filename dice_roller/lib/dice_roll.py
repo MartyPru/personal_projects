@@ -3,15 +3,15 @@
 # Returning the result graphically and by text
 
     # As a user
-    # So that I can decide outcomes
+    # So that I can decide outcomes -- IMPLEMENTED
     # I want to be able to roll dice
 
     # As a user
-    # So that I can use different probabilities for my rolls
+    # So that I can use different probabilities for my rolls -- IMPLEMENTED
     # I want to choose from a selection of different sided dice
 
     # As a user
-    # So that I can follow the rules of my favourite tabletop game
+    # So that I can follow the rules of my favourite tabletop game -- IMPLEMENTED
     # I want to be able to roll a combination of dice
 
     # As a user
@@ -62,7 +62,7 @@ class DiceBox():
         results = []
         for die in self.dice:
             results.append(die.roll())
-        return f"Total: {sum(results)}, Rolls:{results}"
+        return f"Total: {sum(results)}, Rolls: {results}"
 
     def list_dice(self):
         return [f"d{die.sides}" for die in self.dice]
