@@ -2,3 +2,4 @@
 .pytest_cache
 .vscode
 whatsapp_sender/lib/config.py
+whatsapp_sender/lib/PyWhatKit_DB.txt
