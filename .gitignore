@@ -1,2 +1,4 @@
 .DS_Store
 .pytest_cache
+.vscode
+whatsapp_sender/lib/config.py
